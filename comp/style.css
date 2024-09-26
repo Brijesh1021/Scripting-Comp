@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("images/j.jpg"); /* Background image */
+    background-size: cover;          /* Ensures the image covers the entire background */
+    background-position: center;     /* Centers the image */
+    background-repeat: no-repeat;    /* Prevents the image from repeating */
+    height: 100vh;                   /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the form */
+.container {
+    background: rgba(255, 255, 255, 0.15);  /* Semi-transparent white */
+    border-radius: 20px;                   /* Soft, rounded corners */
+    padding: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* Light shadow for depth */
+    backdrop-filter: blur(10px);            /* Glass effect */
+    -webkit-backdrop-filter: blur(10px);    /* For Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover{
+    transform:scale(1.03);
+}
+
+/* Heading styling */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight:600px;
+    letter-spacing:1px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Label styling */
+label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+/* Input hover and focus effects */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #2575fc;
+}
+
+/* Adding subtle shadow to the button */
+button:active {
+    transform: scale(0.98);
+    box-shadow:inset 0px 0px;
+
+
+}
+
+/* Mobile-friendly design */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
